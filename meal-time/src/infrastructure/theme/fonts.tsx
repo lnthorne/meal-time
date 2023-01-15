@@ -21,3 +21,4 @@ export const fontSizes = {
 	h2: "56px",
 	h1: "112px",
 };
+// test
