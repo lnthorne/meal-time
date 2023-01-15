@@ -10,6 +10,7 @@ const Title = styled.Text`
 	color: blue;
 	margin: 10px;
 `;
+// Test
 
 export const ResturantInfoCard = () => {
 	const data: Array<Resturant> = GetResturantInfo();
