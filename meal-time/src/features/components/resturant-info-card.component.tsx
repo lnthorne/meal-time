@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { StyleSheet } from "react-native";
 import { Text, Card } from "react-native-paper";
 import styled from "styled-components/native";
 
@@ -11,7 +10,7 @@ const ResturantCard = styled(Card)`
 `;
 
 const Title = styled(Text)`
-	color: blue;
+	color: ${(props) => props.theme.colors.ui.primary};
 	margin: 10px;
 `;
 
