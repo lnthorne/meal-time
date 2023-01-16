@@ -5,8 +5,10 @@ const tempInfo: Array<Resturant> = [
 	{
 		name: "liam",
 		icon: "temp",
-		photos: ["Temp"],
-		address: "Temp",
+		photos: [
+			"https://www.foodiesfeed.com/wp-content/uploads/2019/06/top-view-for-box-of-2-burgers-home-made-600x899.jpg",
+		],
+		address: "100 some random street",
 		openingHours: "temp",
 		rating: 5,
 		isClosedTemp: false,

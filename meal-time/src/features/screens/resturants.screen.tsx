@@ -7,30 +7,29 @@ import styled, { ThemeProvider } from "styled-components/native";
 import { ResturantInfoCard } from "../components/resturant-info-card.component";
 import { theme } from "../../infrastructure/theme";
 
-const Body = styled(SafeAreaView)`
+const SafeArea = styled(SafeAreaView)`
 	flex: 1;
 	margin-top: ${StatusBar.currentHeight}px;
 `;
 
-const SearchBar = styled(View)`
-	padding: 16px;
+const SearchConatainer = styled(View)`
+	padding: ${(props) => props.theme.space[3]};
 `;
 
-const DataList = styled(View)`
+const ResturantListCOntainer = styled(View)`
 	flex: 1;
-	padding: ${(props) => props.theme.space[3]}px;
-	background-color: blue;
+	padding: ${(props) => props.theme.space[3]};
 `;
 
 export const ResturantScreen = () => {
 	return (
-		<Body>
-			<SearchBar>
+		<SafeArea>
+			<SearchConatainer>
 				<Searchbar value={""} />
-			</SearchBar>
-			<DataList>
+			</SearchConatainer>
+			<ResturantListCOntainer>
 				<ResturantInfoCard />
-			</DataList>
-		</Body>
+			</ResturantListCOntainer>
+		</SafeArea>
 	);
 };
